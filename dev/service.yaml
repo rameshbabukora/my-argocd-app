@@ -3,7 +3,12 @@ kind: Service
 metadata:
   name: myapp-service
 spec:
+<<<<<<< HEAD
   type: LoadBalancer
+=======
+  #ClusterIP: None
+  #type: LoadBalancer
+>>>>>>> 9ba5883cbe70029539aa1bf52c64492ecee0a16c
   selector:
     app: myapp
   ports:
