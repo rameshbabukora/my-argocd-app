@@ -14,6 +14,7 @@ metadata:
     alb.ingress.kubernetes.io/success-codes: 200,301,302
   namespace: myapp
 spec:
+  ingressClassName: nginx
   rules:
     - host: www.mynginx.com
       http:
