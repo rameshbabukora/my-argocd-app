@@ -20,6 +20,8 @@ kubectl -n argocd get secret argocd-initial-admin-secret -o jsonpath="{.data.pas
 ```
 </br>
 
+argocd app create sample --repo https://github.com/narendra311777/my-argocd-app.git --path dev --dest-server https://kubernetes.default.svc --dest-namespace myapp
+
 #### Links
 
 * Config repo: [https://gitlab.com/nanuchi/argocd-app-config](https://gitlab.com/nanuchi/argocd-app-config)
